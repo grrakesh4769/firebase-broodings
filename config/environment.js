@@ -4,6 +4,7 @@
 module.exports = function(environment) {
   let ENV = {
     modulePrefix: 'firebase-broodings',
+    podModulePrefix: 'firebase-broodings/pods',
     environment,
     rootURL: '/',
     locationType: 'auto',
