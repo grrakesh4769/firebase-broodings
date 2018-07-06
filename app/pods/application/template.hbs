@@ -1,17 +1,1 @@
-Broodings.....
-{{#unless session.isAuthenticated}}
-  <li>
-    <a href="#" {{action 'login' }}>Login</a>
-  </li>
-{{else}}
-  <li>
-    <a href="#" {{action 'logout' }}>Logout</a>
-  </li>
-  <li>
-    <a href='javascript:void(0)' target='_blank'>
-      {{session.currentUser.displayName}}
-      <img src='{{session.currentUser.photoURL}}' height='30px' width='30px'>
-    </a>
-  </li>
-{{/unless}}
-{{outlet}}
+
