@@ -22,6 +22,17 @@ module.exports = function(environment) {
     APP: {
       // Here you can pass flags/options to your application instance
       // when it is created
+    },
+
+    // firebase: 'https://broodings-b9048.firebaseio.com',
+    firebase: {
+      apiKey: 'AIzaSyCUKDQeOWPdSakuRgr_M6xWWr_llwexAPA',
+      authDomain: 'broodings-b9048.firebaseapp.com',
+      databaseURL: 'https://broodings-b9048.firebaseio.com',
+      storageBucket: 'broodings-b9048.appspot.com',
+    },
+    torii: {
+      sessionServiceName: 'session'
     }
   };
 

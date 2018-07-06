@@ -23,8 +23,6 @@ module.exports = function(defaults) {
   app.import('node_modules/bootstrap/dist/js/bootstrap.bundle.js');
 
   app.import('node_modules/bootstrap/dist/css/bootstrap.css');
-  app.import('node_modules/bootstrap/dist/css/bootstrap-grid.css');
-  app.import('node_modules/bootstrap/dist/css/bootstrap-reboot.css');
 
   return app.toTree();
 };
