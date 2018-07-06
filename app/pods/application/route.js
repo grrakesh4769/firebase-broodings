@@ -9,14 +9,14 @@ export default Route.extend({
     return get(this, 'session').fetch().catch(function() {});
   },
   model(){
-    console.log(this.get('session.isAuthenticated'));
+
   },
   actions: {
     login() {
       get(this, 'session').open('firebase', {
         provider: 'google'
       }).then(function(data) {
-        console.log(data);
+        
       });
     },
     logout() {

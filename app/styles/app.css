@@ -1,0 +1,7 @@
+.ember-application {
+  height: 100vh;
+}
+
+.ember-application>.ember-view {
+  height: 100%;
+}
