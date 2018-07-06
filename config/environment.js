@@ -27,7 +27,7 @@ module.exports = function(environment) {
     // firebase: 'https://broodings-b9048.firebaseio.com',
     firebase: {
       apiKey: 'AIzaSyCUKDQeOWPdSakuRgr_M6xWWr_llwexAPA',
-      authDomain: 'broodings.ga',
+      authDomain: 'www.broodings.ga',
       databaseURL: 'https://broodings-b9048.firebaseio.com',
       storageBucket: 'broodings-b9048.appspot.com',
     },
