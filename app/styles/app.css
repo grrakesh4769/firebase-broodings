@@ -5,3 +5,23 @@
 .ember-application>.ember-view {
   height: 100%;
 }
+
+.fb-logo {
+  width: auto;
+  height: 2.5rem;
+}
+
+.navbar-brand-text {
+  color: black;
+  font-size: 1.4rem;
+  border-left: black 1px dotted;
+  padding-left: 0.25rem;
+}
+
+.bg-lighter {
+  background-color: #e0e0e0 !important;
+}
+
+.bg-light {
+  background-color: #b0b0b0 !important;
+}
