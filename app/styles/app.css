@@ -11,6 +11,10 @@
   height: 2.5rem;
 }
 
+.navbar {
+  border-bottom: 1px solid;
+}
+
 .navbar-brand-text {
   color: black;
   font-size: 1.4rem;
@@ -18,10 +22,14 @@
   padding-left: 0.25rem;
 }
 
-.bg-lighter {
+/* .bg-lighter {
   background-color: #e0e0e0 !important;
 }
 
 .bg-light {
   background-color: #b0b0b0 !important;
+} */
+
+.page-title {
+  border-bottom: 1px solid #eee;
 }
