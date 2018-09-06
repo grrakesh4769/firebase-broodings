@@ -10,19 +10,23 @@
 
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
-      {{#link-to 'application' tagName="li" class="nav-item" bubbles=false}}
-        {{#link-to 'application' class="nav-link"}}Home{{/link-to}}
+      {{!--#link-to 'home' tagName="li" class="nav-item" bubbles=false}}
+        {{#link-to 'home' class="nav-link"}}Home{{/link-to}}
+      {{/link-to--}}
+      {{#link-to 'blogs' tagName="li" class="nav-item" bubbles=false}}
+        {{#link-to 'blogs' class="nav-link"}}Blogs{{/link-to}}
       {{/link-to}}
-      <li class="nav-item">
-        <a class="nav-link" href="#">Link</a>
-      </li>
+      {{#link-to 'about' tagName="li" class="nav-item" bubbles=false}}
+        {{#link-to 'about' class="nav-link"}}About me/blog{{/link-to}}
+      {{/link-to}}
     </ul>
   </div>
 </nav>
-<div class="jumbotron h-100 bg-lighter">
+{{!--<div class="jumbotron h-100 bg-lighter">
   <h1 class="display-4">Uh, Oh!</h1>
   <p class="lead">So...I wasn't really expecting anyone here just yet.</p>
   <hr class="my-4">
   <p>Do check back later, though. You never know.</p>
-</div>
+</div>--}}
 {{outlet}}
+{{!--Footer Goes here--}}

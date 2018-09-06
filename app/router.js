@@ -8,6 +8,11 @@ const Router = EmberRouter.extend(googlePageview, {
 });
 
 Router.map(function() {
+  this.route('about');
+  this.route('blogs', function() {
+    this.route('list');
+    this.route('view');
+  });
 });
 
 export default Router;

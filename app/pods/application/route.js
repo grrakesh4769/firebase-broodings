@@ -16,7 +16,7 @@ export default Route.extend({
       get(this, 'session').open('firebase', {
         provider: 'google'
       }).then(function(data) {
-        
+
       });
     },
     logout() {
