@@ -36,7 +36,7 @@
     "ember-data": "~3.7.0",
     "ember-export-application-global": "^2.0.0",
     "ember-load-initializers": "^2.0.0",
-    "ember-resolver": "^4.0.0",
+    "ember-resolver": "^5.0.1",
     "ember-source": "~3.7.2",
     "loader.js": "^4.7.0"
   },
