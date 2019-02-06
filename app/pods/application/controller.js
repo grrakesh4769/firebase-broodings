@@ -2,8 +2,7 @@ import Controller from '@ember/controller';
 import Ember from 'ember';
 import getOrCreateUser from '../../utils/get-or-create-user';
 const {
-  get,
-  set
+  get
 } = Ember;
 
 export default Controller.extend({
