@@ -7,6 +7,6 @@
     <label for="post-content">Content</label>
     {{textarea class="form-control" id="post-content" placeholder="Awesome content..." rows=6 value=model.NEW_POST.content}}
   </div>
-  <button type="submit" class="btn btn-secondary">Post</button>
+  <button type="submit" class="btn btn-secondary" {{action 'createPost'}}>Post</button>
 </div>
 {{outlet}}
