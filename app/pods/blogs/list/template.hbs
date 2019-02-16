@@ -9,6 +9,8 @@
       <p class="mb-1">{{post.content}}</p>
       {{!--<small>Donec id elit non mi porta.</small>--}}
     </a>
+  {{else}}
+    <span class="no-posts p-5 text-center">No posts available for you!</span>
   {{/each}}
 </div>
 {{outlet}}

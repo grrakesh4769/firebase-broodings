@@ -22,7 +22,7 @@
     </ul>
     <div class="form-inline my-2 my-lg-0">
       {{#unless session.isAuthenticated}}
-        <button class="btn my-2 my-sm-0" {{action 'login' }}>Login</button>
+        <button class="btn my-2 my-sm-0 p-1" {{action 'login' }}>Login</button>
       {{else}}
         <button class="btn my-2 my-sm-0 p-1" {{action 'logout' }}>Logout</button>
         <span class="sep"></span>
