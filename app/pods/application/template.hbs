@@ -20,6 +20,17 @@
         {{#link-to 'about' class="nav-link"}}About me/blog{{/link-to}}
       {{/link-to}}
     </ul>
+    <div class="form-inline my-2 my-lg-0">
+      {{#unless session.isAuthenticated}}
+        <button class="btn my-2 my-sm-0" {{action 'login' }}>Login</button>
+      {{else}}
+        <button class="btn my-2 my-sm-0 p-1" {{action 'logout' }}>Logout</button>
+        <span class="sep"></span>
+        <span class="m-1">{{session.currentUser.displayName}}</span>
+        <span class="sep"></span>
+        <img src='{{session.currentUser.photoURL}}' height='40px' width='40px' class="ml-1">
+      {{/unless}}
+    </div>
   </div>
 </nav>
 {{!--<div class="jumbotron h-100 bg-lighter">

@@ -20,6 +20,7 @@ module.exports = function(environment) {
     },
 
     APP: {
+      ADMIN_UID: '2E8hvf2qJNcCEZBPritnj1KFCa92'
       // Here you can pass flags/options to your application instance
       // when it is created
     },

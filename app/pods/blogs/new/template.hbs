@@ -1,0 +1,12 @@
+<div class="m-4">
+  <div class="form-group">
+    <label for="post-title">Title</label>
+    {{input class="form-control" id="post-title" placeholder="Cool title" value=model.NEW_POST.title}}
+  </div>
+  <div class="form-group">
+    <label for="post-content">Content</label>
+    {{textarea class="form-control" id="post-content" placeholder="Awesome content..." rows=6 value=model.NEW_POST.content}}
+  </div>
+  <button type="submit" class="btn btn-secondary">Post</button>
+</div>
+{{outlet}}

@@ -2,9 +2,9 @@ import Route from '@ember/routing/route';
 import Ember from 'ember';
 
 export default Route.extend({
-  model() {
+  model(){
     return Ember.RSVP.hash({
-      POSTS: this.get('store').findAll('post')
+      NEW_POST: this.get('store').createRecord('post') //No I18N
     })
   }
 });

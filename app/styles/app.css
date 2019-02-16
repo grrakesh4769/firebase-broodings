@@ -5,7 +5,6 @@
 .ember-application>.ember-view {
   height: 100%;
 } */
-
 .fb-logo {
   width: auto;
   height: 2.5rem;
@@ -29,7 +28,13 @@
 .bg-light {
   background-color: #b0b0b0 !important;
 } */
-
 .page-title {
   border-bottom: 1px solid #eee;
+}
+
+.sep {
+  height: 20px;
+  width: 1px;
+  background-color: #ccc;
+  display: inline-block
 }
