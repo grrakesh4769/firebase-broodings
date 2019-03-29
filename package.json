@@ -11,9 +11,10 @@
   },
   "repository": "",
   "scripts": {
-    "build": "ember build",
+    "build": "ember build --environment=production",
     "start": "ember server",
-    "test": "ember test"
+    "test": "ember test",
+    "deploy": "firebase deploy"
   },
   "devDependencies": {
     "broccoli-asset-rev": "^3.0.0",
