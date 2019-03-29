@@ -11,10 +11,10 @@
       <sourceFolder url="file://$MODULE_DIR$/tests/integration" isTestSource="true" />
       <sourceFolder url="file://$MODULE_DIR$/tests/acceptance" isTestSource="true" />
       <sourceFolder url="file://$MODULE_DIR$/tests/dummy/app" isTestSource="true" />
-      <sourceFolder url="file://$MODULE_DIR$/node_modules" type="java-resource" />
       <excludeFolder url="file://$MODULE_DIR$/.bower_components.ember-try" />
       <excludeFolder url="file://$MODULE_DIR$/.node_modules.ember-try" />
       <excludeFolder url="file://$MODULE_DIR$/dist" />
+      <excludeFolder url="file://$MODULE_DIR$/node_modules" />
       <excludeFolder url="file://$MODULE_DIR$/tmp" />
     </content>
     <orderEntry type="inheritedJdk" />
