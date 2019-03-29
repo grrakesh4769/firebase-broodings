@@ -1,10 +1,10 @@
 import Ember from 'ember';
-import FirebaseAdapter from 'emberfire/adapters/firebase';
+import RealtimeDatabaseAdapter from 'emberfire/adapters/realtime-database';
 
 const {
   inject
 } = Ember;
 
-export default FirebaseAdapter.extend({
+export default RealtimeDatabaseAdapter.extend({
   firebase: inject.service(),
 });

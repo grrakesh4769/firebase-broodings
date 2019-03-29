@@ -1,23 +1,24 @@
 import Route from '@ember/routing/route';
 import Ember from 'ember';
+import firebase from 'firebase/app';
+
 const {
   get
 } = Ember;
 
 export default Route.extend({
   beforeModel() {
-    return get(this, 'session').fetch().catch(function() {});
+    return get(this, 'session').fetch().catch(function () {
+    });
   },
-  model(){
+  model() {
 
   },
   actions: {
-    login() {
-      get(this, 'session').open('firebase', {
-        provider: 'google'
-      }).then(function() {
-
-      });
+    async login() {
+      const provider = new firebase.auth.GoogleAuthProvider();
+      const auth = await get(this.controller, 'firebaseApp').auth();
+      return auth.signInWithPopup(provider);
     },
     logout() {
       get(this, 'session').close();
