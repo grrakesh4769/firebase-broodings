@@ -23,6 +23,7 @@ dist
 out/
 tmp
 .DS_Store
+.firebase/
 
 # Idea
 /.idea/workspace.xml
