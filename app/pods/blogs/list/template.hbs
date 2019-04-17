@@ -4,9 +4,9 @@
     {{#link-to 'blogs.view' post class="list-group-item list-group-item-action flex-column align-items-start m-2"}}
       <div class="d-flex w-100 justify-content-between">
         <h5 class="mb-1">{{post.title}}</h5>
-        <small>{{post.post_created_at}}</small>
+        <small>{{format-timestamp post.post_created_at}}</small>
       </div>
-      <p class="mb-1">{{post.content}}</p>
+      {{post-content-sample content=post.content}}
     {{!--<small>Donec id elit non mi porta.</small>--}}
     {{/link-to}}
   {{else}}
