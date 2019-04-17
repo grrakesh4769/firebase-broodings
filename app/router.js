@@ -7,11 +7,13 @@ const Router = EmberRouter.extend(googlePageview, {
   rootURL: config.rootURL
 });
 
-Router.map(function() {
+Router.map(function () {
   this.route('about');
-  this.route('blogs', function() {
+  this.route('blogs', function () {
     this.route('list');
-    this.route('view');
+    this.route('view', {
+      path: '/view/:post_id'
+    });
     this.route('new');
   });
 });
