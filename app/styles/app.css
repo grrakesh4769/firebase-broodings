@@ -41,6 +41,7 @@
 
 .blog-content {
   font-size: 1.125rem;
+  white-space: pre-wrap;
 }
 
 .blog-content-sample {
