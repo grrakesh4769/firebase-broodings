@@ -12,6 +12,6 @@ module('Integration | Helper | format-timestamp', function(hooks) {
 
     await render(hbs`{{format-timestamp inputValue}}`);
 
-    assert.equal(this.element.textContent.trim(), '1234');
+    assert.equal(this.element.textContent.trim(), '01 Jan 1970 05:30 AM');
   });
 });
