@@ -39,9 +39,13 @@
   display: inline-block
 }
 
-.blog-content {
-  font-size: 1.125rem;
-  white-space: pre-wrap;
+/*.blog-content {*/
+/*  font-size: 1.125rem;*/
+/*  white-space: pre-wrap;*/
+/*}*/
+
+#post-content {
+  resize: none;
 }
 
 .blog-content-sample {
@@ -56,4 +60,20 @@
   -webkit-box-orient: vertical;
   overflow: hidden;
   text-overflow: ellipsis;
+}
+
+.blog-content.preview, .blog-content-sample.preview {
+  background: white;
+  min-height: 10rem;
+  overflow-x: auto;
+
+  height: calc(1.5em + 0.75rem + 2px);
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.blog-content-sample.preview {
+  min-height: auto;
+  height: auto;
 }

@@ -6,5 +6,6 @@ export default DS.Model.extend({
   post_created_at: DS.attr(),
   post_last_modified_at: DS.attr({
     defaultValue: -1
-  })
+  }),
+  sample_content: DS.attr()
 });

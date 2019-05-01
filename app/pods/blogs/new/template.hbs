@@ -5,7 +5,25 @@
   </div>
   <div class="form-group">
     <label for="post-content">Content</label>
-    {{textarea class="form-control" id="post-content" placeholder="Awesome content..." rows=6 value=model.NEW_POST.content}}
+    {{textarea class="form-control" id="post-content" placeholder="Awesome content..." rows=6
+               value=model.NEW_POST.content}}
+  </div>
+  <div class="form-group">
+    <label for="post-content-preview">Content Preview</label>
+    <div class="blog-content preview">
+      {{{model.NEW_POST.content}}}
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="post-content-sample">Sample Content</label>
+    {{textarea class="form-control" id="post-content-sample" rows=6
+               value=model.NEW_POST.sample_content}}
+  </div>
+  <div class="form-group">
+    <label for="post-content-sample-preview">Sample Content Preview</label>
+    <div class="blog-content-sample preview">
+      {{model.NEW_POST.sample_content}}
+    </div>
   </div>
   <button type="submit" class="btn btn-secondary" {{action 'createPost'}}>Post</button>
 </div>

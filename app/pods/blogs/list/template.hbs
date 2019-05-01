@@ -6,7 +6,7 @@
         <h5 class="mb-1">{{post.title}}</h5>
         <small>{{format-timestamp post.post_created_at}}</small>
       </div>
-      {{post-content-sample content=post.content}}
+      {{post-content-sample content=post.sample_content}}
     {{!--<small>Donec id elit non mi porta.</small>--}}
     {{/link-to}}
   {{else}}
