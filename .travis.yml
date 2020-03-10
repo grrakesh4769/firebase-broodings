@@ -12,6 +12,7 @@ addons:
 cache:
   directories:
     - $HOME/.npm
+  yarn: true
 
 env:
   global:
