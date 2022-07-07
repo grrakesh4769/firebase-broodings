@@ -42,7 +42,7 @@
     "loader.js": "^4.7.0",
     "bootstrap": "^4.4.1",
     "emberfire": "^2.0.10",
-    "moment": "^2.24.0",
+    "moment": "^2.29.4",
     "torii": "^0.10.1"
   },
   "engines": {
